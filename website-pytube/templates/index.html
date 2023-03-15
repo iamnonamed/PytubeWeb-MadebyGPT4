@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>YouTube Video Downloader</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center mt-5">YouTube Video Downloader</h1>
+                <form action="/download" method="post" id="download-form">
+                    <div class="input-group mt-5">
+                        <input type="text" id="video_url" name="video_url" class="form-control" placeholder="YouTube Video URL" required>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
+
